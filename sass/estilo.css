@@ -1,0 +1,221 @@
+body #page header nav button {
+  color: #000000;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 2px;
+  background-color: #B0E0E6;
+  border: none;
+  border: 1px solid #C0C0C0;
+  border-width: thin;
+  cursor: pointer;
+  outline: 0;
+  float: right;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body #page header nav button:hover {
+  background-color: #ffffff;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body #page {
+  border: 1px solid #C0C0C0;
+  margin: 0 auto;
+  background: #E0FFFF;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+body #page header {
+  min-height: 100px;
+}
+
+body #page header a, body #page header h1, body #page header nav {
+  display: inline-block;
+  cursor: pointer;
+  color: #1C1C1C;
+}
+
+body #page header a i, body #page header h1 i, body #page header nav i {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body #page header a i:hover, body #page header h1 i:hover, body #page header nav i:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+body #page header nav {
+  float: right;
+}
+
+body #page #banner {
+  background: url(../img/coronavirus.jpg) no-repeat center -20px;
+  background-size: 100%;
+  min-height: 480px;
+  border-radius: 10px;
+}
+
+body #page main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #page main section {
+  font-family: "PT Sans Narrow", sans-serif;
+  width: 31%;
+  padding: 10px;
+  background: #B0E0E6;
+  margin: 20px 0;
+  color: #1C1C1C;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: default;
+}
+
+body #page main section details {
+  margin-bottom: 20px;
+}
+
+body #page main section details summary {
+  color: #1C1C1C;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body #page main section details summary:hover {
+  color: #1E90FF;
+}
+
+body #page main section details p {
+  text-align: justify;
+}
+
+body #page main section details a {
+  color: #1E90FF;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body #page main section details a:hover {
+  color: #1C1C1C;
+}
+
+body #page main section.sec-pessoas {
+  width: 30%;
+}
+
+body #page main section.sec-pessoas .img-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #page main section.sec-pessoas .img-flex figure {
+  width: 100px;
+  cursor: pointer;
+}
+
+body #page main section.sec-pessoas .img-flex figure a {
+  color: #1C1C1C;
+  text-decoration: none;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body #page main section.sec-pessoas .img-flex figure img {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body #page main section.sec-pessoas .img-flex figure img:hover {
+  border-radius: 100%;
+}
+
+body .modal {
+  width: 100%;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+body .modal.active {
+  display: block;
+}
+
+body .modal .modal-context {
+  background: #E0FFFF;
+  width: 50%;
+  height: 40%;
+  border-radius: 5px;
+  margin: 100px auto;
+  -webkit-box-shadow: 7px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+body .modal .modal-context button {
+  color: #000000;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #B0E0E6;
+  border: none;
+  border: 1px solid #C0C0C0;
+  border-width: thin;
+  cursor: pointer;
+  outline: 0;
+  float: right;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .modal .modal-context button:hover {
+  background-color: #ffffff;
+}
+
+body .modal .modal-context #conteudoModal h2, body .modal .modal-context #conteudoModal p {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  #page {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 900px) {
+  #page {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 600px) {
+  #page {
+    max-width: 600px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,177 @@
+$body-color: #ffffff
+$page-color: #E0FFFF
+$section-color: #B0E0E6
+$breakpoint-sm: 600px
+$breakpoint-md: 900px
+$breakpoint-lg: 1200px
+
+$robotoCondensed: 'Roboto Condensed', sans-serif;
+$ptSansNarrow: 'PT Sans Narrow', sans-serif;
+
+@mixin radius($rad)
+  border-radius: $rad
+
+%botaoNav
+    // font-family: $robotoCondensed
+    color: #000000
+    padding: 10px 20px
+    margin-top: 20px
+    margin-right: 2px
+    background-color:#B0E0E6
+    border: none
+    border: 1px solid#C0C0C0
+    border-width: thin
+    cursor: pointer
+    // border-style: ridge
+    outline: 0
+    float: right
+    // @include radius(2px)
+    transition: 0.3s
+    &:hover
+      background-color: #ffffff
+
+@mixin botaoGenerico($color)
+  // font-family: $robotoCondensed
+  color: #000000
+  padding: 10px 20px
+  margin-top: 10px
+  margin-right: 10px
+  background-color: $color
+  border: none
+  border: 1px solid#C0C0C0
+  border-width: thin
+  cursor: pointer
+  // border-style: ridge
+  outline: 0
+  float: right
+  // @include radius(2px)
+  transition: 0.3s
+  &:hover
+    background-color: #ffffff
+
+body
+  background:  $body-color
+  font-family: $robotoCondensed
+
+  #page
+    border: 1px solid#C0C0C0
+    // border: none
+    margin: 0 auto
+    background: $page-color
+    padding: 10px
+    @include radius(5px)
+    header 
+      min-height: 100px
+      a, h1, nav
+        display: inline-block
+        cursor: pointer
+        color: #1C1C1C
+        i
+          transition: 1s
+          &:hover
+            transform: rotate(360deg)
+      nav
+        float: right
+        button
+          @extend %botaoNav
+
+    #banner
+      background: url(../img/coronavirus.jpg) no-repeat center -20px
+      background-size: 100%
+      min-height: 480px
+      @include radius(10px)
+      // border: 1px solid#C0C0C0
+    
+    main
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      section
+        font-family: $ptSansNarrow
+        width: 31%
+        padding: 10px
+        background: $section-color
+        margin: 20px 0
+        color: #1C1C1C
+        text-decoration: none
+        @include radius(10px)
+        cursor: default
+
+        details
+          margin-bottom: 20px
+          summary
+            color: #1C1C1C
+            cursor: pointer
+            outline: none
+            transition: 0.3s
+            &:hover
+              color:#1E90FF
+          p 
+            text-align: justify
+          a
+            color: #1E90FF
+            text-decoration: none
+            transition: 0.3s
+            &:hover
+              color: #1C1C1C
+
+        &.sec-pessoas
+          width: 30%
+          .img-flex
+            display: flex
+            flex-wrap: wrap
+            figure
+              width: 100px
+              cursor: pointer
+              a
+                color: #1C1C1C
+                text-decoration: none
+                align-content: center
+              img
+                align-content: center
+                // @include radius(100%)
+                max-width: 80px
+                transition: 0.5s
+                &:hover
+                  // transform: rotate(360deg)
+                  // @include radius(100%)
+                  // transform: skewY(7deg)
+                  @include radius(100%)
+
+  .modal
+    width: 100%
+    height: 800px
+    background-color: rgba(0, 0, 0, 0.8)
+    position: absolute
+    top: 0
+    display: none
+    &.active
+      display: block
+    .modal-context
+      background: #E0FFFF
+      width: 50%
+      height: 40%
+      @include radius(5px)
+      margin: 100px auto
+      box-shadow: 7px 1px 10px rgba(0, 0, 0, 0.5)
+      button
+        @include botaoGenerico(#B0E0E6)
+      #conteudoModal
+        h2, p
+          text-align: center
+
+@media (min-width: $breakpoint-sm) 
+  #page
+    //background-color: blue
+    max-width: 800px
+
+@media (min-width: $breakpoint-md) 
+  #page
+    //background-color: red
+    max-width: $breakpoint-lg
+
+@media (max-width: $breakpoint-sm) 
+  #page
+    //background-color: pink
+    max-width: $breakpoint-sm
