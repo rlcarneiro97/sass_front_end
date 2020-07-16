@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corona News</title>
+  <link rel="stylesheet" href="sass/estilo.css"/>
+  <link rel="stylesheet" href="lib/fontawesome-free-5.12.1-web/css/all.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="page">
+    <header id="cabecalho">
+      <a href="../sass_front_end/index.html">
+        <h1><i class="fas fa-biohazard"></i> Corona News</h1>
+      </a>
+      <nav>
+        <a>
+          <button id="modal" onclick="abrirModal()">Sobre Nós</button>
+        </a>
+        <a href="../sass_front_end/contato.html">
+          <button>Contato</button>
+        </a>
+      </nav>
+    </header>
+    <section id="banner">
+      <canvas id="canvas">
+        Caso não suporte canvas, escreva isto!
+      </canvas>
+    </section>
+    <main id="block-down">
+      <section>
+        <h1><i class="fas fa-dna"></i> Sobre o Vírus</h1>
+        <details>
+          <summary>O que é o Corona?</summary>
+          <p>Os coronavírus (CoV) são uma grande família viral, conhecidos desde meados dos anos 1960, 
+            que causam infecções respiratórias em seres humanos e em animais. Geralmente, infecções por 
+            coronavírus causam doenças respiratórias leves a moderada, semelhantes a um resfriado comum. 
+            A maioria das pessoas se infecta com os coronavírus comuns ao longo da vida, sendo as crianças 
+            pequenas mais propensas a se infectarem. Os coronavírus comuns que infectam humanos são alpha 
+            coronavírus 229E e NL63 e beta coronavírus OC43, HKU1.</p>
+        </details>
+        <details>
+          <summary>Como o Coronavírus age no organismo?</summary>
+          <p>Alguns coronavírus podem causar síndromes respiratórias graves, como a síndrome respiratória 
+            aguda grave que ficou conhecida pela sigla SARS da síndrome em inglês “Severe Acute Respiratory 
+            Syndrome”. SARS é causada pelo coronavírus associado à SARS (SARS-CoV), sendo os primeiros 
+            relatos na China em 2002. O SARS-CoV se disseminou rapidamente para mais de doze países na 
+            América do Norte, América do Sul, Europa e Asia, infectando mais de 8.000 pessoas e causando 
+            entorno de 800 mortes, antes da epidemia global de SARS ser controlada em 2003. Desde 2004, 
+            nenhum caso de SARS tem sido relatado mundialmente.</p>
+        </details>
+        <details>
+          <summary>Surgimento da SARS e de seus semelhantes</summary>
+          <p>Em 2012, foi isolado outro novo coronavírus, distinto daquele que causou a SARS no começo 
+            da década passada. Esse novo coronavírus era desconhecido como agente de doença humana até 
+            sua identificação, inicialmente na Arábia Saudita e, posteriormente, em outros países do 
+            Oriente Médio, na Europa e na África. Todos os casos identificados fora da Península Arábica 
+            tinham histórico de viagem ou contato recente com viajantes procedentes de países do Oriente 
+            Médio – Arábia Saudita, Catar, Emirados Árabes e Jordânia.
+            Pela localização dos casos, a doença passou a ser designada como síndrome respiratória do 
+            Oriente Médio, cuja sigla é MERS, do inglês “Middle East Respiratory Syndrome” e o novo vírus 
+            nomeado coronavírus associado à MERS (MERS-CoV).</p>
+        </details>
+      </section>
+      <section>
+        <h1><i class="fas fa-shield-alt"></i> Prevenção</h1>
+        <details>
+          <summary>Cuidados com a Higiene Pessoal</summary>
+          <p>Cuidados básicos, como lavar as mãos, podem sim fazer a diferença. Não só com água e sabão, 
+            mas com álcool em gel também. É importante cobrir o nariz e boca ao espirrar ou tossir, além 
+            de evitar aglomerações mesmo se não estiver doente. Outro ponto a se levar em consideração é 
+            manter aberto sempre que possível os ambientes, a fim de deixá-los ventilados e evitar a 
+            propagação do vírus. Por fim, não compartilhe objetos pessoais, pois nunca se sabe quando 
+            alguém está infectado.</p>
+        </details>
+        <details>
+          <summary>Importância do Isolamento Social</summary>
+          <p>A estratégia de restrição social, recomendada pela OMS e adotada por diferentes países 
+            para "achatar a curva" de contaminação pelo novo coronavírus. Ela permite a redução da 
+            infecção, o que causa menos estragos ao sistema de saúde no geral, poupando mais vidas. 
+            A ideia é deixar todos em casa, para que na hora do maior pico de infecção, o mesmo seja 
+            reduzido, pois as pessoas estarão o mais isoladas possível. Com isso o sistema de saúde 
+            entrará em colapso, porém com um número bem mais controlado de pacientes, o que compromete 
+            menos aqueles outros pacientes que possam surgir com outras situações, e que seriam 
+            prejudicados pela alta demanda de atendimento.</p>
+        </details>
+        <details>
+          <summary>Dúvidas Frequentes</summary>
+          <p>Para mais dúvidas acesse o site do governo sobre o <a target="_blank" href="https://coronavirus.saude.gov.br">coronavirus</a></p>
+        </details>
+      </section>
+      <section class="sec-pessoas">
+        <h1><i class="fas fa-archive"></i> Para mais informações recomendamos esses profissionais:</h1>
+        <div class="img-flex">
+          <figure>
+            <a target="_blank" href="https://www.youtube.com/channel/UCSTlOTcyUmzvhQi6F8lFi5w">
+              <img src="img/Atila_Iamarino.jpg" alt="Foto do Atila">
+              <figcaption>Dr. Átila Iamarino (Biólogo Dr. em Virologia)</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a target="_blank" href="https://twitter.com/Prof_Jubilut?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+              <img src="img/jubilut.jpg" alt="Foto do Jubilut">
+              <figcaption>Prof. Paulo Jubilut</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a target="_blank" href="https://twitter.com/drauziovarella?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+              <img src="img/Drauzio Varela.jpg" alt="Foto do Drauzio Varella">
+              <figcaption>Dr. Drauzio Varella</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a target="_blank" href="https://twitter.com/lhmandetta?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+              <img target="_blank" src="img/Luiz Henrique Mandetta.jpg" alt="Foto do Ministro">
+              <figcaption>Ministro da Sáude Luiz Henrique Mandetta</figcaption>
+            </a>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </div>
+  <div class="modal">
+    <div class="modal-context">
+      <button href="#" onclick="fecharModal()">Voltar</button>
+      <!-- conteudo do modal -->
+      <div id="conteudoModal">
+        <h2>Sobre Nós</h2>
+        <p>Somos um meio de comunicação sério para com a população.<br>Email para contato: corona_news@gmail.com</p>
+      </div> 
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/util.js"></script>
+</body>
+</html>

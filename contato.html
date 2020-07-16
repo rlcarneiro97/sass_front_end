@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corona News</title>
+  <link rel="stylesheet" href="sass/contato.css"/>
+  <link rel="stylesheet" href="lib/fontawesome-free-5.12.1-web/css/all.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="page">
+    <header id="cabecalho">
+      <a href="../sass_front_end/index.html">
+        <h1><i class="fas fa-biohazard"></i> Corona News</h1>
+      </a>
+      <nav>
+        <a>
+            <button id="modal" onclick="abrirModal()">Sobre Nós</button>
+        </a>
+        <a href="../sass_front_end/contato.html">
+            <button>Contato</button>
+        </a>
+      </nav>
+    </header>
+    <main id="block-down">
+      <section>
+        <a href="../sass_front_end/index.html">
+            <button>Voltar</button>
+        </a>
+        <h1><i class="fas fa-envelope"></i> Contato</h1>
+        <h3> Para aqueles que suspeitam estar com a Covid-19, por favor, informar seus dados abaixo:<br><br></h3>
+        <label>Digite o seu nome: 
+            <input type="text" id="nome"/><br>
+        </label>
+        <label><br>Digite a sua idade: 
+            <input type="number" id="idade"/><br>
+        </label>
+        <label><br>Coloque o seu CPF: 
+            <input type="text" id="cpf"/><br>
+        </label>
+        <label><br>Digite o seu e-mail: 
+            <input type="email" id="email"/><br>
+        </label>
+        <label><br>Digite seu endereco: 
+            <input type="text" id="endereco"/><br><br>
+        </label>
+        <button id="enviar" onclick="inserirNaTabela()">Enviar</button>
+      </section>
+    </main>
+  </div>
+
+  <!-- modal e afins -->
+  <div class="modal">
+    <div class="modal-context">
+      <button href="#" onclick="fecharModal()">Voltar</button>
+      <!-- conteudo do modal -->
+      <div id="conteudoModal">
+        <h2>Sobre Nós</h2>
+        <p>Somos um meio de comunicação sério para com a população.<br>Email para contato: corona_news@gmail.com</p>
+      </div> 
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/util.js"></script>
+</body>
+</html>
